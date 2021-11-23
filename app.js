@@ -7,6 +7,9 @@
  ************************************************************************/
 document.addEventListener("DOMContentLoaded", function (_e) {
 
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
     
     /******************************************************************
             Fonctions à compléter dans la dernière partie du TP 
@@ -290,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function (_e) {
      *  Initialisation avec des appels asynchrones
      */
     (async function init() {
+        
 
         document.querySelector("#bcStart p").innerHTML = "Chargement des lignes...";
                 
@@ -587,8 +591,6 @@ document.addEventListener("DOMContentLoaded", function (_e) {
         });
     }
 
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js');
-      };
+  
 
 });
