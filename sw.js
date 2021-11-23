@@ -10,10 +10,9 @@ self.addEventListener('install', (e) => {
     );
 });
 
-var gamesImages = [];
 
-var contentToCache = appShellFiles.concat(gamesImages);
 
+var contentToCache = appShellFiles
 var cacheName = 'ginkobus-v1';
 var appShellFiles = [
   '',
