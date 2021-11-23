@@ -19,6 +19,7 @@ var contentToCache = [
   './icons/icon-128.png',
   './icons/icon-168.png',
   './icons/icon-180.png',
+  './icons/icon-192.png',
   './icons/icon-256.png',
   './icons/icon-512.png',
   './icons/maskable_icon.png'
